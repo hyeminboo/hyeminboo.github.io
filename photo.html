@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Photo — Hyemin Boo</title>
+  <link rel="stylesheet" href="stylesheet.css">
+  <link rel="stylesheet" href="photo.css?v=20260816-2">
+</head>
+<body>
+  <header class="photo-nav">
+    <a href="index.html">← HOME</a><span>PHOTO</span><a href="blog.html">BLOG</a>
+  </header>
+  <main class="photo-main">
+    <section class="shelf" aria-label="연도별 사진 앨범"><div class="albums" id="album-list"></div></section>
+  </main>
+
+  <div class="record-modal" id="record-modal" hidden>
+    <button class="modal-backdrop" id="modal-backdrop" type="button" aria-label="앨범 닫기"></button>
+    <section class="record-stage" role="dialog" aria-modal="true" aria-label="사진 앨범 플레이어">
+      <button class="modal-close" id="modal-close" type="button" aria-label="앨범 닫기">×</button>
+      <div class="memory-preview" id="memory-preview" aria-live="polite">
+        <div class="memory-media" id="memory-media">
+          <img id="memory-image" alt="" hidden>
+          <button class="photo-arrow photo-prev" id="photo-prev" type="button" aria-label="이전 사진">‹</button>
+          <button class="photo-arrow photo-next" id="photo-next" type="button" aria-label="다음 사진">›</button>
+          <span class="photo-count" id="photo-count"></span>
+        </div>
+        <div class="memory-caption"><time id="memory-date"></time><p id="memory-note"></p></div>
+      </div>
+      <div class="record-area">
+        <div class="record-sleeve" id="record-sleeve"></div>
+        <div class="sleeve-track">
+          <p id="track-credit"></p>
+          <div class="waveform" id="waveform" aria-hidden="true">
+            <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+          </div>
+        </div>
+        <div class="record" id="record">
+          <div class="record-shine"></div>
+          <div class="record-label" id="record-label"></div>
+        </div>
+        <div class="cursor-date" id="cursor-date"></div>
+      </div>
+      <div class="youtube-player-wrap" id="youtube-player-wrap" hidden>
+        <div id="youtube-player"></div>
+      </div>
+    </section>
+  </div>
+  <audio id="memory-audio" preload="metadata"></audio>
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script src="photo.js?v=20260816-2"></script>
+</body>
+</html>

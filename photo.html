@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Photo — Hyemin Boo</title>
-  <link rel="preload" as="image" href="images/photo-assets/2026-cover-v2.jpg">
+  <link rel="preload" as="image" href="images/photo-assets/2026-cover.jpg">
   <link rel="stylesheet" href="stylesheet.css">
-  <link rel="stylesheet" href="photo.css?v=20260816-12">
+  <link rel="stylesheet" href="photo.css?v=20260819-14">
 </head>
 <body>
   <header class="photo-nav">
@@ -22,12 +22,12 @@
       <p id="music-choice-title">How would you like to listen?</p>
       <div class="music-choice-options">
         <button type="button" class="music-option" data-music-choice="youtube">
-          <span class="music-option-icon music-option-icon--youtube" aria-hidden="true">▶</span>
+          <span class="music-option-icon music-option-icon--youtube" aria-hidden="true"></span>
           <span class="music-option-text"><strong>YouTube</strong><small><b>Recommended</b> — especially for Premium users ✨</small></span>
         </button>
         <button type="button" class="music-option" data-music-choice="spotify">
-          <span class="music-option-icon music-option-icon--spotify" aria-hidden="true">●</span>
-          <span class="music-option-text"><strong>Spotify</strong><small>30s previews, no ads.. a few songs are missing, kinda sad</small></span>
+          <img class="music-option-icon music-option-icon--spotify" src="images/photo-assets/spotify.png" alt="" aria-hidden="true">
+          <span class="music-option-text"><strong>Spotify</strong><small>No ads.. but ignores the timestamp I picked, kinda sad</small></span>
         </button>
         <button type="button" class="music-option music-option--muted" data-music-choice="none">
           <span class="music-option-text"><strong>Continue without music</strong><small>No soundtrack? you'll regret it... but okayyy :)</small></span>
@@ -73,6 +73,6 @@
   </div>
   <audio id="memory-audio" preload="metadata"></audio>
   <script src="https://open.spotify.com/embed/iframe-api/v1" async></script>
-  <script src="photo.js?v=20260816-11"></script>
+  <script src="photo.js?v=20260819-1"></script>
 </body>
 </html>

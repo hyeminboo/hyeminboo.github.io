@@ -15,7 +15,8 @@ button { font:inherit; }
 .music-choice-card button:hover,.music-choice-card button:focus-visible { outline:none; border-color:#ddd5c7; transform:translateY(-2px); box-shadow:0 10px 20px rgba(46,32,23,.09); }
 .music-option-icon { flex:0 0 28px; width:28px; height:28px; display:grid; place-items:center; border-radius:50%; color:#fff; font-size:11px; }
 .music-option-icon--youtube { background:#e02f2f; }
-.music-option-icon--spotify { background:#1DB954; font-size:9px; }
+.music-option-icon--youtube::before { content:""; width:0; height:0; margin-left:2px; border-top:5px solid transparent; border-bottom:5px solid transparent; border-left:8px solid #fff; }
+.music-option-icon--spotify { display:block; object-fit:contain; background:transparent; }
 .music-choice-card strong,.music-choice-card small { display:block; }
 .music-choice-card strong { font:12px/1.4 Arial,sans-serif; letter-spacing:.06em; }
 .music-choice-card small { margin-top:3px; color:#8a8378; font:9px/1.4 Arial,sans-serif; letter-spacing:.04em; }
